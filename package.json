@@ -1,6 +1,6 @@
 {
   "name": "enttec-open-dmx-usb",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Node.js library for sending DMX data through the Enttec Open DMX USB Interface",
   "main": "index.js",
   "type": "module",
