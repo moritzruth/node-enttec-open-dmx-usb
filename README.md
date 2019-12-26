@@ -4,16 +4,16 @@
 
 ## Installation
 ```bash
-yarn add node-enttec-open-dmx-usb
+yarn add enttec-open-dmx-usb
 # or
-npm install node-enttec-open-dmx-usb
+npm install enttec-open-dmx-usb
 ```
 
 ## Usage
 All functions are documented using JSDoc and the code is not uglified, so feel free to [explore it](index.js).
 
 ```js
-import { EnttecOpenDMXUSBDevice as DMXDevice } from "node-enttec-open-dmx-usb";
+import { EnttecOpenDMXUSBDevice as DMXDevice } from "enttec-open-dmx-usb";
 
 (async () => {
   const device = new DMXDevice(await DMXDevice.getFirstAvailableDevice());
