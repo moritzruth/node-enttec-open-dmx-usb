@@ -11,7 +11,7 @@
     "build": "babel src --out-dir lib"
   },
   "files": [
-    "lib/*"
+    "index.js"
   ],
   "dependencies": {
     "@babel/preset-env": "^7.7.7",
