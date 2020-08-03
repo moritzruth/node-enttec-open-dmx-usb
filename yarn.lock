@@ -90,9 +90,9 @@
     to-fast-properties "^2.0.0"
 
 "@moritzruth/eslint-config@^1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@moritzruth/eslint-config/-/eslint-config-1.0.6.tgz#8a6e184721a19e99ac23146bb7e697ab0911bb7a"
-  integrity sha512-j5/Ehr8ywqyiJMVc6ra1US8THkigCk0Y+AGt3gGqpfIpcFEOZz8JafftXaeuDjGS3MJUVf7lgBWd7vVX/CnJeg==
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/@moritzruth/eslint-config/-/eslint-config-1.0.9.tgz#d3537b7981cb2cfc6265885115db24c98fa6917c"
+  integrity sha512-HUIwoF9u6rM96puffGNozwnv3KU7azTpNKMqbWZdFqP9H1PgbMMMJzlGOFX8R3nZ/dzASNlCEm1NwecGCPFruQ==
   dependencies:
     eslint-plugin-import "^2.19.1"
     eslint-plugin-markdown "^1.0.1"
