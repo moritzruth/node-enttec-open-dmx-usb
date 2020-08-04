@@ -5,6 +5,11 @@
   "repository": "https://github.com/moritzruth/node-enttec-open-dmx-usb.git",
   "author": "Moritz Ruth <dev@moritzruth.de>",
   "license": "MIT",
+  "keywords": [
+    "dmx",
+    "enttec",
+    "usb"
+  ],
   "scripts": {
     "build": "pika build",
     "lint": "eslint src",
