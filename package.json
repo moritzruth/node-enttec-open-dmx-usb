@@ -1,22 +1,36 @@
 {
   "name": "enttec-open-dmx-usb",
   "version": "1.0.1",
-  "description": "A Node.js library for sending DMX data through the Enttec Open DMX USB Interface",
-  "main": "index.js",
-  "type": "module",
+  "description": "A Node.js library for interacting with the Enttec Open DMX USB Interface",
+  "main": "src/index.js",
   "repository": "https://github.com/moritzruth/node-enttec-open-dmx-usb.git",
-  "author": "Moritz Ruth <dev@moritz-ruth.de>",
+  "author": "Moritz Ruth <dev@moritzruth.de>",
   "license": "MIT",
-  "files": [
-    "index.js"
-  ],
-  "dependencies": {
-    "lodash": "^4.17.15",
-    "serialport": "^9.0.0"
+  "scripts": {
+    "build": "pika build",
+    "lint": "eslint src"
+  },
+  "@pika/pack": {
+    "pipeline": [
+      [
+        "@pika/plugin-ts-standard-pkg"
+      ],
+      [
+        "@pika/plugin-build-node"
+      ]
+    ]
   },
   "devDependencies": {
-    "@moritzruth/eslint-config": "^1.0.6",
-    "babel-eslint": "^10.0.3",
-    "eslint": "^6.8.0"
+    "@pika/pack": "^0.5.0",
+    "@pika/plugin-build-node": "^0.9.2",
+    "@pika/plugin-ts-standard-pkg": "^0.9.2",
+    "@types/node": "^14.0.27",
+    "@types/serialport": "^8.0.1",
+    "eslint": "^7.6.0",
+    "eslint-config-awzzm-ts": "^1.0.1",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "serialport": "^9.0.0"
   }
 }

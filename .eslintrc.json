@@ -1,11 +1,12 @@
 {
-  "extends": "@moritzruth",
+  "extends": "awzzm-ts",
   "env": {
     "node": true,
     "es6": true
   },
-  "parser": "babel-eslint",
   "parserOptions": {
-    "sourceType": "module"
+    "sourceType": "module",
+    "ecmaVersion": 10,
+    "project": "tsconfig.json"
   }
 }
