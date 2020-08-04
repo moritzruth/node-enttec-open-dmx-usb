@@ -2,13 +2,14 @@
   "name": "enttec-open-dmx-usb",
   "version": "1.0.1",
   "description": "A Node.js library for interacting with the Enttec Open DMX USB Interface",
-  "main": "src/index.js",
   "repository": "https://github.com/moritzruth/node-enttec-open-dmx-usb.git",
   "author": "Moritz Ruth <dev@moritzruth.de>",
   "license": "MIT",
   "scripts": {
     "build": "pika build",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "version": "yarn build",
+    "test": "echo There are no tests"
   },
   "@pika/pack": {
     "pipeline": [
