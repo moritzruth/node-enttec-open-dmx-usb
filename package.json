@@ -14,7 +14,8 @@
     "build": "pika build",
     "lint": "eslint src",
     "version": "yarn build",
-    "test": "echo There are no tests"
+    "test": "echo There are no tests",
+    "pub": "pika publish"
   },
   "@pika/pack": {
     "pipeline": [
