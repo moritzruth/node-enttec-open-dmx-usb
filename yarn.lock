@@ -1903,18 +1903,18 @@ eslint-ast-utils@^1.1.0:
     lodash.zip "^4.2.0"
 
 eslint-config-awzzm-ts@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/eslint-config-awzzm-ts/-/eslint-config-awzzm-ts-1.0.1.tgz#2f94937b946f71afa29a22212eb270e54c9bf089"
-  integrity sha512-0LI6alRL4njndlT+9KghGllT6Lv95XomFDPoZfrHpliALWQMMbLdLn1qJNShF3d+39WHF90PuBgDQl3VO9sHtA==
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/eslint-config-awzzm-ts/-/eslint-config-awzzm-ts-1.0.4.tgz#6bf89f599f569818dd1b1d7d554752bc7f0b5a65"
+  integrity sha512-UwuOvn9b2XJJFKkTRMCsXfcTAgc9Nx3sKykOlRp9uge5/VwmFlz7sZZkIF55KwjmDQWX0Q2PBWSsiyZ/ZIG1dQ==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^3.8.0"
     "@typescript-eslint/parser" "^3.8.0"
-    eslint-config-awzzm "^1.0.0"
+    eslint-config-awzzm "^1.0.3"
 
-eslint-config-awzzm@^1.0.0:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/eslint-config-awzzm/-/eslint-config-awzzm-1.0.1.tgz#fb0ec0fe1d02da68aa5f53197509c8c827dcfef0"
-  integrity sha512-5Z1wWsxllQqW3+6YFCrcTCepa8qjc8Rq2MR3Ly7/+j6uF7tsvCpUK90EUxixUIxpfcTfCOMEIAX5tm+oSpM6ww==
+eslint-config-awzzm@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/eslint-config-awzzm/-/eslint-config-awzzm-1.0.3.tgz#1bde7c1403fc3883b9e6610d4f41dfb48a197cf2"
+  integrity sha512-72cdO/FbV+r17xLPxu12d53ZV9eEUkes+pjS6zdpihCJbywrx75lmmcPdwKFBG+iez1hSSKJI6NtSlywkXLnbQ==
   dependencies:
     eslint-plugin-import "^2.22.0"
     eslint-plugin-unicorn "^21.0.0"
