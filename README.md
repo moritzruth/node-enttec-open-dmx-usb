@@ -10,7 +10,7 @@ npm install enttec-open-dmx-usb
 ```
 
 ## Usage
-All functions are documented using JSDoc, and the code is not uglified and easy to understand, so feel free to [explore it](src/index.ts).
+All functions are documented using JSDoc and the code is easy to understand, so feel free to [explore it](src/index.ts).
 
 ```js
 import { EnttecOpenDMXUSBDevice as DMXDevice } from "enttec-open-dmx-usb";
