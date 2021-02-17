@@ -1996,9 +1996,9 @@ escape-string-regexp@^2.0.0:
   integrity sha512-UpzcLCXolUWcNu5HtVMHYdXJjArjsF9C0aNnquZYY4uW/Vu0miy5YoWvbV345HauVvcAUnpRuhMMcqTcGOY2+w==
 
 eslint-config-awzzm-ts@^1.0.1:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-awzzm-ts/-/eslint-config-awzzm-ts-1.5.0.tgz#ef84d5f155f589add8c4fee51c68cd28fc45b999"
-  integrity sha512-q0cHxOjgxHSXkZDbDHz7QkiUVxlQKM2Mk4frRI5iifmHqSynfCg/BskwHxkXII/rvZTkJxNthhyHapz676Tynw==
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/eslint-config-awzzm-ts/-/eslint-config-awzzm-ts-1.5.2.tgz#40bd033f84e15c9cd23e8466224b7d6eadd12265"
+  integrity sha512-7WBmGMJjPEqK8UV3j3pz0wnCNPzCYRRxt00UKCnWRnZ3alSLWt2kMf6SN1nx0KkcjZA9DH7gjxlMFlO53vtPqg==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^4.15.0"
     "@typescript-eslint/parser" "^4.15.0"
