@@ -1,12 +1,17 @@
-import { EventEmitter } from "events"
+import { EventEmitter } from "eventemitter3"
 import SerialPort from "serialport"
 
 export const VENDOR_ID = "0403" // Enttec
 export const PRODUCT_ID = "6001" // Open DMX USB
 
-export class EnttecOpenDMXUSBDevice extends EventEmitter {
+interface Events {
+  ready: []
+  error: [Error]
+}
+
+export class EnttecOpenDMXUSBDevice extends EventEmitter<Events> {
   private shouldBeSending = false
-  private sendTimeout: NodeJS.Timeout | null = null
+  private sendTimeout: ReturnType<typeof setTimeout> | null = null
   private buffer = Buffer.alloc(513)
   private readonly port: SerialPort
 
@@ -40,7 +45,6 @@ export class EnttecOpenDMXUSBDevice extends EventEmitter {
   startSending(interval = 0) {
     if (!this.port.isOpen) throw new Error("The device is not ready yet. Wait for the 'ready' event.")
 
-    this.emit("sending-started", interval)
     this.shouldBeSending = true
 
     // eslint-disable-next-line unicorn/consistent-function-scoping
@@ -61,7 +65,6 @@ export class EnttecOpenDMXUSBDevice extends EventEmitter {
    * Stops sending.
    */
   stopSending() {
-    this.emit("sending-stopped")
     this.shouldBeSending = false
 
     if (this.sendTimeout !== null) clearTimeout(this.sendTimeout)
@@ -74,7 +77,7 @@ export class EnttecOpenDMXUSBDevice extends EventEmitter {
    * @param {Buffer|Object|Array} channels
    * @param {boolean} [clear=false] Whether all previously assigned channels should be set to 0
    */
-  setChannels(channels: Buffer | number[] | { [key: number]: number }, clear = false) {
+  setChannels(channels: Buffer | number[] | Record<number, number>, clear = false) {
     if (clear) {
       this.buffer = Buffer.alloc(513)
       this.buffer[0] = 0

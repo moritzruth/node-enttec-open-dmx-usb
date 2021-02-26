@@ -1,12 +1,3 @@
 {
-  "extends": "awzzm-ts",
-  "env": {
-    "node": true,
-    "es6": true
-  },
-  "parserOptions": {
-    "sourceType": "module",
-    "ecmaVersion": 10,
-    "project": "tsconfig.json"
-  }
+  "extends": ["awzzm-ts", "awzzm-node"]
 }
