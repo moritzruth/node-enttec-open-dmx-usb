@@ -28,7 +28,7 @@
     "eslint": "^7.20.0",
     "eslint-config-awzzm-node": "^1.5.0",
     "eslint-config-awzzm-ts": "^1.5.2",
-    "typescript": "~4.1.5"
+    "typescript": "~4.2.2"
   },
   "dependencies": {
     "eventemitter3": "^4.0.7",
