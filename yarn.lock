@@ -725,11 +725,11 @@ escape-string-regexp@^1.0.5:
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
 
 eslint-config-awzzm-node@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-awzzm-node/-/eslint-config-awzzm-node-1.5.0.tgz#6c8d66459b02a6b8a6601ef43fd90d47d704cc64"
-  integrity sha512-grV6GukElsbJZ64hrbOPAx/USnG/PD+Gh+40O4QSDtp1db/VSp6AWTRChijGhXSx6GDDrh4rfvpJqu+cH/xcLA==
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-awzzm-node/-/eslint-config-awzzm-node-1.6.0.tgz#7f93b3548fd8fb5de931a4d212680d54ef70b98f"
+  integrity sha512-HkOt7zZ4LMgpZJUe8F9Ya209+d36hXwMJvoY7osBFqaN/HYHXCewNeuU9LekB5UHQhk6IDZ3sAE+bzWTp4vCFw==
   dependencies:
-    eslint-config-awzzm "^1.5.0"
+    eslint-config-awzzm "^1.6.0"
     eslint-plugin-node "^11.1.0"
 
 eslint-config-awzzm-ts@^1.5.2:
