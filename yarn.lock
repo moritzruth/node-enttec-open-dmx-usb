@@ -725,11 +725,11 @@ escape-string-regexp@^1.0.5:
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
 
 eslint-config-awzzm-node@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-awzzm-node/-/eslint-config-awzzm-node-1.5.0.tgz#6c8d66459b02a6b8a6601ef43fd90d47d704cc64"
-  integrity sha512-grV6GukElsbJZ64hrbOPAx/USnG/PD+Gh+40O4QSDtp1db/VSp6AWTRChijGhXSx6GDDrh4rfvpJqu+cH/xcLA==
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-awzzm-node/-/eslint-config-awzzm-node-1.6.0.tgz#7f93b3548fd8fb5de931a4d212680d54ef70b98f"
+  integrity sha512-HkOt7zZ4LMgpZJUe8F9Ya209+d36hXwMJvoY7osBFqaN/HYHXCewNeuU9LekB5UHQhk6IDZ3sAE+bzWTp4vCFw==
   dependencies:
-    eslint-config-awzzm "^1.5.0"
+    eslint-config-awzzm "^1.6.0"
     eslint-plugin-node "^11.1.0"
 
 eslint-config-awzzm-ts@^1.5.2:
@@ -741,10 +741,10 @@ eslint-config-awzzm-ts@^1.5.2:
     "@typescript-eslint/parser" "^4.15.0"
     eslint-config-awzzm "^1.5.0"
 
-eslint-config-awzzm@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-awzzm/-/eslint-config-awzzm-1.5.0.tgz#af9fe495629c6ec62515c0db73138f68d18f12b4"
-  integrity sha512-ETzMzLGKdrRYX9uwtxl6cBkD42hhGAbkDeFWZBtlHD69BCrxHTC4eidriYgGlEitLvgYNvIj3KuTViEqnxIavw==
+eslint-config-awzzm@^1.5.0, eslint-config-awzzm@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-awzzm/-/eslint-config-awzzm-1.6.0.tgz#3fb204abec56c545ce7b6f651c65894cc23b97eb"
+  integrity sha512-+rcPbPrm98Oc91IQHxqgw4k1voLn7Z8E/Q/sbfhA8vcSeh9AUGKr5QrUSFEQ6K5H6CftfLbx/tPzkBuk92DkBA==
   dependencies:
     eslint-plugin-import "^2.22.1"
     eslint-plugin-unicorn "^28.0.0"
