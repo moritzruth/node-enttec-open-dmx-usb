@@ -35,6 +35,13 @@ export class EnttecOpenDMXUSBDevice extends EventEmitter<Events> {
       this.emit("ready")
       if (startSending) this.startSending(0)
     })
+    // Forward SerialPort errors.
+    // If nothing is attaching to the SerialPort error event, the Node process will be terminated
+    // in case of an error (e.g. wrong device passed) which would not permit error handling in
+    // projects using this package.
+    this.port.on("error", (error: Error) => {
+      this.emit("error", error)
+    })
   }
 
   /**
