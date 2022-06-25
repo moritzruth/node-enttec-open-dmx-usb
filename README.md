@@ -41,4 +41,4 @@ import { EnttecOpenDMXUSBDevice as DMXDevice } from "enttec-open-dmx-usb";
 ## Events
 `ready` - `startSending` can be called.
 
-`error` - An error occurred.
+`error` - An error occurred. The error can also originate from SerialPort.
