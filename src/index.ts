@@ -18,7 +18,7 @@ export class EnttecOpenDMXUSBDevice extends EventEmitter<Events> {
   /**
    * @param {string} path A path returned by {@link EnttecOpenDMXUSBDevice.listDevices} or
    * {@link EnttecOpenDMXUSBDevice.getFirstAvailableDevice}.
-   * @param {boolean} [startSending=true] If the device should start sending as soon as it is ready.
+   * @param {boolean} [startSending=true] Whether the device should start sending as soon as it is ready.
    */
   constructor(path: string, startSending = true) {
     super()
@@ -35,19 +35,17 @@ export class EnttecOpenDMXUSBDevice extends EventEmitter<Events> {
       this.emit("ready")
       if (startSending) this.startSending(0)
     })
-    // Forward SerialPort errors.
-    // If nothing is attaching to the SerialPort error event, the Node process will be terminated
-    // in case of an error (e.g. wrong device passed) which would not permit error handling in
-    // projects using this package.
+
+    // Without this, errors would be uncaught.
     this.port.on("error", (error: Error) => {
       this.emit("error", error)
     })
   }
 
   /**
-   * Starts sending.
-   * @param {number} [interval=0] The time between each attempt to send.
-   * @throws Error If the device is not ready yet.
+   * Start sending.
+   * @param {number} [interval=0] The time between each attempt to send. Most of the time, `0` works.
+   * @throws Error When the device is not ready yet.
    */
   startSending(interval = 0) {
     if (!this.port.isOpen) throw new Error("The device is not ready yet. Wait for the 'ready' event.")
@@ -69,7 +67,7 @@ export class EnttecOpenDMXUSBDevice extends EventEmitter<Events> {
   }
 
   /**
-   * Stops sending.
+   * Stop sending.
    */
   stopSending() {
     this.shouldBeSending = false
@@ -78,7 +76,7 @@ export class EnttecOpenDMXUSBDevice extends EventEmitter<Events> {
   }
 
   /**
-   * Sets the channel values.
+   * Set the channel values.
    * If channels is an Object, the keys are the channel numbers.
    *
    * @param {Buffer|Object|Array} channels
@@ -121,7 +119,7 @@ export class EnttecOpenDMXUSBDevice extends EventEmitter<Events> {
   }
 
   /**
-   * @returns {Promise} Resolves when the whole universe was send.
+   * @returns {Promise} Resolves when the whole universe was sent.
    * @private
    */
   private async sendUniverse(): Promise<void> {
@@ -139,7 +137,7 @@ export class EnttecOpenDMXUSBDevice extends EventEmitter<Events> {
   }
 
   /**
-   * Lists the paths of all available devices.
+   * Get the paths of all available devices.
    * @returns {Promise<string[]>}
    */
   static async listDevices(): Promise<string[]> {
@@ -150,8 +148,8 @@ export class EnttecOpenDMXUSBDevice extends EventEmitter<Events> {
   }
 
   /**
-   * Gets the path of the first available device found.
-   * @throws Error when no device is found.
+   * Get the path of the first available device.
+   * @throws Error When no device is found.
    * @returns {Promise<string>}
    */
   static async getFirstAvailableDevice(): Promise<string> {

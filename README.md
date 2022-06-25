@@ -2,7 +2,7 @@
 > A Node.js library for interacting with the
 > [Enttec Open DMX USB Interface](https://www.enttec.co.uk/en/product/controls/dmx-usb-interfaces/open-dmx-usb/)
 
-Only tested on Windows, but as it uses `serialport` under the hood, it should also work in
+As it uses `serialport` under the hood, it should also work in
 [these environments](https://serialport.io/docs/guide-platform-support#supported-platforms-and-architectures).
 
 ## Install
@@ -41,4 +41,4 @@ import { EnttecOpenDMXUSBDevice as DMXDevice } from "enttec-open-dmx-usb";
 ## Events
 `ready` - `startSending` can be called.
 
-`error` - An error occurred. The error can also originate from SerialPort.
+`error` - An error occurred. `error` events from `serialport` are passed through.
