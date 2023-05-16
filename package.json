@@ -1,7 +1,7 @@
 {
   "name": "enttec-open-dmx-usb",
-  "version": "3.0.1",
-  "description": "A Node.js library for interacting with the Enttec Open DMX USB Interface",
+  "version": "4.0.1",
+  "description": "A Node.js library for interacting with the Enttec Open DMX USB interface",
   "repository": "https://github.com/moritzruth/node-enttec-open-dmx-usb.git",
   "author": "Moritz Ruth <dev@moritzruth.de>",
   "license": "MIT",
