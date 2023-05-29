@@ -126,6 +126,15 @@ export class EnttecOpenDMXUSBDevice extends EventEmitter<Events> {
   }
 
   /**
+   * Return the current buffer value for a given channel (used to animations).
+   * @param channel 
+   * @returns 
+   */
+  getChannelValue(channel: number): number {
+    return this.buffer[channel]
+  }
+
+  /**
    * @returns A Promise resolved when the whole universe was sent.
    * @private
    */
